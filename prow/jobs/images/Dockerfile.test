@@ -1,7 +1,7 @@
 # Common Dockerfile for unit and integration test
 FROM debian:buster-slim AS base
 
-ARG GOPROXY=https://proxy.golang.org|direct
+ARG GOPROXY=direct
 ENV GOPROXY=${GOPROXY}
 
 ARG GO_VERSION=1.19
